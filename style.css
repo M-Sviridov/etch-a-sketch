@@ -28,15 +28,16 @@ h1 {
 
 #grid-item {
     background-color: #dee2e6;
-    border: 1px solid #adb5bd;
+    border: 1px solid #212529;
     border-radius: 2px;
 }
 
-.buttons {
+.color-buttons {
     margin-top: 50px;
 }
 
-#reset-button {
+#random-button {
+    /* margin-right: 100px; */
     color: #adb5bd;
     background-color: #6c757d;
     font-size: 14px;
@@ -48,9 +49,51 @@ h1 {
     transition-duration: 500ms;
 }
 
+#random-button:hover {
+    cursor: pointer;
+    box-shadow: 0 1px 1px #adb5bd;
+    border: 1px solid #adb5bd;
+    transform: scale(1.05);
+}
+
+#reset-button {
+    margin-left: 100px;
+    margin-right: 100px;
+    color: #adb5bd;
+    background-color: #6c757d;
+    font-size: 14px;
+    font-family: 'monaco';
+    border-radius: 1em;
+    border: 1px solid #adb5bd;
+    height: 50px;
+    width: 120px;
+    transition-duration: 500ms;
+}
+
 #reset-button:hover {
     cursor: pointer;
     box-shadow: 0 1px 1px #adb5bd;
     border: 1px solid #adb5bd;
     transform: scale(1.05);
 }
+
+#shading-button {
+    color: #adb5bd;
+    background-color: #6c757d;
+    font-size: 14px;
+    font-family: 'monaco';
+    border-radius: 1em;
+    border: 1px solid #adb5bd;
+    height: 40px;
+    width: 100px;
+    transition-duration: 500ms;
+}
+
+#shading-button:hover {
+    cursor: pointer;
+    box-shadow: 0 1px 1px #adb5bd;
+    border: 1px solid #adb5bd;
+    transform: scale(1.05);
+}
+
+
