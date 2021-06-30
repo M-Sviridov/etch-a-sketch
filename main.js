@@ -1,11 +1,13 @@
 const gridContainer = document.querySelector('.grid-container');
 const resetButton = document.getElementById('reset-button');
 
+
 function createDiv() {
     const div = document.createElement('div');
     div.id = 'grid-item';
     gridContainer.appendChild(div);
 }
+
 
 function defaultGrid() {
     for (let i = 0; i < 16; i++) {
@@ -23,6 +25,7 @@ function defaultGrid() {
 
 defaultGrid();
 
+
 function newGrid(size) {
     gridContainer.setAttribute('style', `grid-template-columns: repeat(${size}, 1fr);
         grid-template-rows: repeat(${size}, 1fr);`);
@@ -38,6 +41,7 @@ function newGrid(size) {
         })
     });
 }
+
 
 function reset() {
     const size = parseInt(prompt('Please enter size of the new grid: '));
