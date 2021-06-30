@@ -37,7 +37,7 @@ function reset() {
         gridContainer.removeChild(gridContainer.firstChild);
     }
     size = parseInt(prompt('Please enter size of the new grid (60 max): '));
-    while (size > 60) {
+    while (size > 60 || size < 1) {
         size = parseInt(prompt('Please enter size of the new grid (60 max): '));
     }
     grid(size);
